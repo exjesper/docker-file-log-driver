@@ -6,7 +6,7 @@
     {
         "destination": "/var/log",
         "type": "bind",
-        "source": "/var/log",
+        "source": "/var/log/dockerlogs",
         "options": ["rbind","rw"]
     }
 ],
