@@ -66,16 +66,17 @@ The excellent [Logagg](https://github.com/deep-compute/logagg) is highly recomme
 ## Install
 
 ```
-$ docker plugin install deepcompute/docker-file-log-driver:1.0 --alias file-log-driver
-Plugin "deepcompute/docker-file-log-driver:1.0" is requesting the following privileges:
+$ mkdir /var/log/dockerlogs
+$ docker plugin install exjesper/docker-file-log-driver:1.0 --alias file-log-driver
+Plugin "exjesper/docker-file-log-driver:1.0" is requesting the following privileges:
  - network: [host]
- - mount: [/var/log]
+ - mount: [/var/log/dockerlogs]
 Do you grant the above permissions? [y/N] y
-1.0: Pulling from deepcompute/docker-file-log-driver
-a019fc3de34c: Download complete 
-Digest: sha256:5b785ded313acd0881c589c5f588f19b3ec3b5300230684a5a7ab1ed1c65e400
-Status: Downloaded newer image for deepcompute/docker-file-log-driver:1.0
-Installed plugin deepcompute/docker-file-log-driver:1.0
+1.0: Pulling from exjesper/docker-file-log-driver
+d29debb515c8: Download complete
+Digest: sha256:34aff09d712788da7585905275745b41a9ffa21039b5aed286a5130752baa774
+Status: Downloaded newer image for exjesper/docker-file-log-driver:1.0
+Installed plugin exjesper/docker-file-log-driver:1.0
 ```
 ## Check
 ```
